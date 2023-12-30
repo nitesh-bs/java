@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;templates&apos;&#x0A;- Original project: &apos;bonus-thymeleafdemo-employees-security-with-in-memory-authentication&apos;&#x0A;- Destination element: &apos;templates&apos;&#x0A;- Original elements:&#x0A;     fancy-login.html&#x0A;     access-denied.html" description="Copy files" element1="src/main/resources/templates/fancy-login.html" element2="src/main/resources/templates/access-denied.html" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1668056317455" target="/11-spring-boot-thymleafdemo-employee-security-in-memory/src/main/resources/templates" units="0" version="1.0"/>
+</session>

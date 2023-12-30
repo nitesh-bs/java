@@ -1,0 +1,37 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: 272a4188af1078ab12eb
+            client-secret: 10cd9c262f2b74b4efb97d3ede1b7d05a85173ab
+       
+  data:
+    cassandra:
+      keyspace-name: book
+      username: CXmSgaxjZflhNLaZtJMqRkpm
+      password: jZG3PkBJtqn4oOSBoQgpE5UQUKR+o9nf4W5RS_AgnuMvnZTukmeSJy7jQbadKOAvailDawGaOeIMoU.vfASSZ3SxBpdZAuzcNKd-YUJjaz8F-dnFz-RigIcZ9ABNd87M
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s     
+  main:
+    allow-circular-references: true
+    
+ 
+    
+datastax-astra:
+    secure-connect-bundle: secure-connect.zip
+  
+astra.db:
+  id: b5a56b14-134e-4ff8-92f4-78f47e7fa13f-1
+  region: asia-south1
+  keyspace: book
+  application-token: AstraCS:CXmSgaxjZflhNLaZtJMqRkpm:6a8ee623a5846b604ec99d3e67f3a543990a827da62e63750fc497e8644f7ac5
+
+datadump.location:
+    author: /home/peter/Downloads/test-authors.txt
+    works: /home/peter/Downloads/test-works.txt           

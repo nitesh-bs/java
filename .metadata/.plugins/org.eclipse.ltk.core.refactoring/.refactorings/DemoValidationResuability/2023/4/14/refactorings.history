@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;DemoValidationResuability&apos;&#x0A;- Original project: &apos;DemoValidationResuability&apos;&#x0A;- Original element: &apos;DemoValidationResuability/src/main/java/com.nitesh.DemoValidationResuability.com.nitesh.DemoValidationResuability&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.nitesh.DemoValidationResuability.com.nitesh.DemoValidationResuability" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.nitesh.DemoValidationResuability.com.nitesh" element3="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.nitesh.DemoValidationResuability.com" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1680843043270" subPackages="false" version="1.0"/>
+</session>

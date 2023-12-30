@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/home/peter/Documents/Ecommerce-Website-Spring-Boot-master"/>
+			<item value="/home/peter/Documents/E-BookShop----Spring-boot-master"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/Spring-Shopping-Cart-master"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/springboot-kafka-real-world-project"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/springboot-kafka-course-main/springboot-kafka-real-world-project"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/springBoot-webflux-demo"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/GraphQL-example"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/GraphNeo4jDemo"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/MicroServices/stayIn"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/stayIn"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/spring-as-backend-0.0.4"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/spring-boot-server-jwt-angular"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/spring-session-management"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/testCase"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/spring-boot-fullstack-professional-12-github-actions"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="/home/peter/Desktop/Nitesh/JSP/spring-mvc-demo"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/springBootKafkaWikiMediaProject"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/stayIn"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/web-customer-tracker-aop"/>
+			<item value="/home/peter/Desktop/Nitesh/JSP/web-customer-tracker-aop/src/com/nitesh/springdemo/aspect/CRMLoggingAspect.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.nitesh.samarthDemo"/>
+			<item value="org.common.dtos"/>
+		</list>
+		<list key="groupId">
+			<item value="com.nitesh"/>
+		</list>
+		<list key="artifactId">
+			<item value="samarthDemo"/>
+			<item value="common-dtos"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenCheckoutLocationPage">
+		<list key="scmUrl">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="common-dtos"/>
+			<item value="payment-service"/>
+			<item value="order-service"/>
+			<item value="kafka-producer"/>
+			<item value="kafka-producer-wikimedia"/>
+			<item value="controller"/>
+			<item value="controllers"/>
+			<item value="entity"/>
+			<item value="service"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[groupId].[artifactId]"/>
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

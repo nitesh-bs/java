@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;autoCloseable&apos; from expression &apos;MockitoAnnotations.openMocks(this)&apos;&#x0A;- Original project: &apos;testCase&apos;&#x0A;- Variable name: &apos;autoCloseable&apos;&#x0A;- Destination method: &apos;com.nitesh.testCase.service.EmployeeServiceImplTest.setup()&apos;&#x0A;- Variable expression: &apos;MockitoAnnotations.openMocks(this)&apos;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;autoCloseable&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.nitesh.testCase.service{EmployeeServiceImplTest.java" name="autoCloseable" replace="true" selection="947 34" stamp="1677152510549" varType="false" version="1.0"/>
+</session>

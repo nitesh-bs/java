@@ -1,0 +1,13 @@
+package com.nitesh.product.dao;
+
+import com.nitesh.product.entity.Role;
+
+public class RoleDaoImpl implements RoleDao {
+
+	@Override
+	public Role findRoleByRoleName(String roleName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

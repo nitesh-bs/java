@@ -1,0 +1,17 @@
+{
+    "_id":"622ecaec6f03c9709d2fe55e",
+    "organizationType":"Bigscal",
+    "isDeleted":false,
+    "isLeft":false,
+    "firstName":"Nitesh",
+    "middleName":"Kantibhai",
+    "lastName":"Shekhada",
+    "email":"niteshshekhada33@gmail.com",
+    "birthDate":"2000-08-10T00:00:00.000Z",
+    "gender":"Male",
+    "contactNumber":"9429486357",
+    "position":"Employee",
+    "correspondenceAddress":"33, Iswar Park Society, Punagam, Sitanagar Chokdi, Choryasi, Surat, Gujarat, 395010",
+    "permanentAddress":"33, Iswar Park Society, Punagam, Sitanagar Chokdi, Choryasi, Surat, Gujarat, 395010",
+    "attendanceCode":"BS215",
+}

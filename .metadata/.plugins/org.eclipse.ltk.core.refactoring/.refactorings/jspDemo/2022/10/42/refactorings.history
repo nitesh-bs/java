@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.nitesh.jsp.FunUtil&apos; to &apos;FunUtils&apos;&#x0A;- Original project: &apos;jspDemo&apos;&#x0A;- Original element: &apos;com.nitesh.jsp.FunUtil&apos;&#x0A;- Renamed element: &apos;com.nitesh.jsp.FunUtils&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FunUtil&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.nitesh.jsp{FunUtil.java[FunUtil" matchStrategy="1" name="FunUtils" qualified="false" references="true" similarDeclarations="false" stamp="1665651531500" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,39 @@
+package com.nitesh.SpringWithMongoDb.model;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "order_db")
+public class User {
+
+	@Id
+	private int id;
+	private String name;
+	private String gender;
+	public User() {
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", gender=" + gender + "]";
+	}
+	
+	
+}

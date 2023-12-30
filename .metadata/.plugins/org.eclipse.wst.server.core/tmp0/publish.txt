@@ -1,0 +1,14 @@
+#Tomcat publish data
+#Mon Apr 17 11:28:44 IST 2023
+org.eclipse.jst.jee.server\:/binary\:/home/peter/Desktop/Nitesh/JSP/web-customer-tracker-aop/WebContent/WEB-INF/lib/spring-web-5.3.9.jar=WEB-INF/lib/spring-web-5.3.9.jar
+org.eclipse.jst.jee.server\:/binary\:/home/peter/.m2/repository/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE.jar=WEB-INF/lib/spring-web-5.0.6.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:/home/peter/Desktop/Nitesh/struts-6.1.2/lib/spring-web-5.3.23.jar=WEB-INF/lib/spring-web-5.3.23.jar
+org.eclipse.jst.jee.server\:/binary\:/home/peter/Desktop/Nitesh/JSP/web-customer-tracker/WebContent/WEB-INF/lib/spring-web-5.3.9.jar=WEB-INF/lib/spring-web-5.3.9.jar
+org.eclipse.jst.jee.server\:/binary\:/home/peter/Desktop/Nitesh/JSP/samarthDemo/src/main/webapp/WEB-INF/lib/spring-web-5.3.9-sources.jar=WEB-INF/lib/spring-web-5.3.9-sources.jar
+org.eclipse.jst.jee.server\:/binary\:/home/peter/Desktop/Nitesh/JSP/spring-mvc-demo/WebContent/WEB-INF/lib/spring-web-5.3.9-sources.jar=WEB-INF/lib/spring-web-5.3.9-sources.jar
+org.eclipse.jst.jee.server\:/binary\:/home/peter/.m2/repository/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar=WEB-INF/lib/spring-web-5.1.7.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:/home/peter/Desktop/Nitesh/JSP/web-customer-tracker/WebContent/WEB-INF/lib/spring-web-5.3.9-sources.jar=WEB-INF/lib/spring-web-5.3.9-sources.jar
+org.eclipse.jst.jee.server\:/binary\:/home/peter/Desktop/Nitesh/JSP/spring-mvc-demo/WebContent/WEB-INF/lib/spring-web-5.3.9.jar=WEB-INF/lib/spring-web-5.3.9.jar
+org.eclipse.jst.jee.server\:/binary\:/home/peter/Desktop/Nitesh/JSP/samarthDemo/src/main/webapp/WEB-INF/lib/spring-web-5.3.9.jar=WEB-INF/lib/spring-web-5.3.9.jar
+org.eclipse.jst.jee.server\:/binary\:/home/peter/Desktop/Nitesh/JSP/web-customer-tracker-aop/WebContent/WEB-INF/lib/spring-web-5.3.9-sources.jar=WEB-INF/lib/spring-web-5.3.9-sources.jar
+org.eclipse.jst.jee.server\:/binary\:/home/peter/.m2/repository/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar=WEB-INF/lib/spring-web-5.0.5.RELEASE.jar

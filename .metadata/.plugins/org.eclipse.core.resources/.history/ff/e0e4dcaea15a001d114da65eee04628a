@@ -1,0 +1,5 @@
+package com.nitesh.springdemo.aspect;
+
+public class CRMLoggingAspect {
+
+}

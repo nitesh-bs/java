@@ -1,0 +1,23 @@
+package com.nitesh.product.controller.admin;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("admin")
+public class DashboardController {
+
+	@GetMapping("/dashboard")
+	public String adminDashboard() {
+		return "admin/dashboard";
+	}
+	
+	@GetMapping("/products")
+	public String getAllProducts(Model model) {
+		model.addAttribute("products","5");
+		return "admin/products";
+	}
+	
+}

@@ -1,0 +1,6 @@
+127.0.0.1 - - [16/Mar/2023:17:55:34 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [16/Mar/2023:17:55:35 +0530] "GET /spring-mvc-demo/ HTTP/1.1" 200 375
+0:0:0:0:0:0:0:1 - - [16/Mar/2023:17:55:35 +0530] "GET /spring-mvc-demo/resources/images/images.jpeg HTTP/1.1" 200 10228
+0:0:0:0:0:0:0:1 - - [16/Mar/2023:17:55:40 +0530] "GET /student/showForm HTTP/1.1" 404 771
+0:0:0:0:0:0:0:1 - - [16/Mar/2023:17:55:46 +0530] "GET /spring-mvc-demo/student/showForm HTTP/1.1" 200 1590
+0:0:0:0:0:0:0:1 - - [16/Mar/2023:17:55:54 +0530] "POST /spring-mvc-demo/student/processForm HTTP/1.1" 200 258
