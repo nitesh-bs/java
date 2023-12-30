@@ -1,0 +1,18 @@
+Java Environment Setup
+
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export PATH=$PATH:$JAVA_HOME/bin
+
+----------------------------------------------------
+			JAVA 17
+----------------------------------------------------			
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$PATH:$JAVA_HOME/bin
+
+
+
+
+----------------------------------------------------
+			Change Java Version 
+-----------------------------------------------------
+alternatives --config java			

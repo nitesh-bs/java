@@ -1,0 +1,34 @@
+package com.nitesh.product.controller;
+
+import java.util.logging.Logger;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.nitesh.product.service.FileStorageService;
+import com.nitesh.product.service.ProductService;
+
+@Controller
+public class HomeController {
+	
+	@Autowired
+	private ProductService productService;
+	
+	@Autowired
+	private  FileStorageService fileStorageService;
+
+
+	private Logger logger = Logger.getLogger(getClass().getName());
+	
+	
+	@GetMapping("/")
+	public String index(Model model) {
+		model.addAttribute("product",productService.findAllProducts());
+		return "index";
+	}
+	
+	
+	
+}

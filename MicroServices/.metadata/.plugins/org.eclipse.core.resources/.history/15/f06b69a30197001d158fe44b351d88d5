@@ -1,0 +1,17 @@
+package B;
+
+
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.print("Main class");
+//		C objC = new C();
+//		objC.m1();
+		 // using child reference
+        B b = new B();
+         
+        // calling method m1
+        b.m1();
+	}
+
+}

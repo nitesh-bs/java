@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<title th:include="fragments/header :: tiles(title='Category List')"></title>
+<th:block th:include="fragments/headerlink" />
+
+
+<meta charset="UTF-8">
+<title>Product - Category</title>
+</head>
+<body>
+	<div>
+		<th:block th:include="fragments/header" />
+		<div class="container-fluid">
+			<h3>List of Categories</h3>
+			<hr>
+			<button type="button" class="btn btn-primary" data-toggle="modal"
+				data-target="#categoryModal">Add Category</button>
+			<hr>
+			<br>
+			<table class="table table-bordered text-center">
+				<thead>
+					<tr>
+						<th class="text-center">Name</th>
+						<div sec:authorize="hasRole('ROLE_ADMIN')">
+							<th class="text-center">Action</th>
+						</div>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="cat : ${category}">
+						<td th:text="${cat.categoryName}">
+							<div sec:authorize="hasRole('ROLE_ADMIN')">
+								<td><a class="btn btn-primary"
+									th:href="@{/admin/category(categoryId=${cat.categoryId})}">Update</a> <a class="btn btn-danger"
+									th:href="@{/admin/deleteCategory(categoryId=${cat.categoryId})}"
+									onclick="if(!(confirm('Are you sure want to delete this category?\nYour product may not be displayed!!!'))) return false">Delete</a>
+								</td>
+							</div>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="modal fade" id="categoryModal" tabindex="-1" role="dialog"
+				aria-labelledby="categoryModalLabel" aria-hidden="true">
+				<form th:action="@{/admin/category}" th:object="${add_category}"
+					class="form" method="post" enctype="multipart/form-data">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="categoryModalLabel">Category</h5>
+								<a th:href="@{/admin/category}" class="close" 
+									aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</a>
+							</div>
+							<div class="modal-body">
+
+
+
+									<input type="hidden" th:field="*{categoryId}">
+								<!-- 
+									<div th:if="${add_product.id ne 0}">
+										<div class="alert alert-danger col-xs-offset-1 col-xs-6">
+											<p th:text="gdfsdf">
+										</div>
+									</div> -->
+
+
+								<div class="row mb-3 form-group">
+									<div class="col-sm-6">
+										<input type="text" th:field="*{categoryName}"
+											class="form-control" placeholder="Product Name">
+									</div>
+									<div th:if="${#fields.hasErrors('categoryName')}"
+										style="margin-bottom: 25px" class="text-danger">
+										<ul>
+											<li th:each="err : ${#fields.errors('categoryName')}"
+												th:text="'Category Name' + ${err}" />
+										</ul>
+									</div>
+								</div>
+
+
+
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-info" th:href="@{/admin/category}">Close</a>
+								<button type="submit" class="btn btn-primary">Save
+									changes</button>
+							</div>
+						</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+	<footer th:insert="~{fragments/footer :: footers}"></footer>
+	</div>
+
+	<script type="text/javascript" th:if="${showModel ne null}">
+		$(window).on('load', function() {
+			$('#categoryModal').modal('show');
+		});
+	</script>
+</body>
+</html>

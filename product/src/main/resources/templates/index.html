@@ -1,0 +1,73 @@
+<!-- <meta http-equiv="refresh"
+content="0; URL='admin/list'"> -->
+<!-- 
+<a href="/login"> Login </a>  -->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+
+
+<meta charset="UTF-8">
+<title
+	th:include="fragments/header :: tiles(title='Product - Home Page')" />
+<th:block th:include="fragments/headerlink" />
+</head>
+<body>
+	<div sec:authorize="isAuthenticated()">
+		<div sec:authorize="hasRole('ADMIN')">
+			<th:block th:include="fragments/header" />
+		</div>
+	</div>
+	<div class="container-fluid" style="margin-top: 2%;">
+
+		<div sec:authorize="isAuthenticated()">
+
+			<div sec:authorize="hasRole('USER')">
+				<div class="row mb-3 ">
+					<b><p class="col-sm-1">Welcome :</p></b> <b><p
+							sec:authentication="name" class="col-sm-2"></p></b>
+					<div class="col-sm-5">
+						<form action="#" th:action="@{/logout}" method="POST">
+							<input type="submit" value="Logout" class="btn btn-primary " />
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div sec:authorize="isAnonymous()">
+			<br> <a th:href="@{/login}" class="btn btn-success">Log in</a>
+		</div>
+		<hr>
+		<br> <br>
+
+		<table border="1" class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Category</th>
+					<th>Stock</th>
+					<th>Price</th>
+					<th>Image</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="prod : ${product}">
+					<td th:text="${prod.productName}">
+					<td th:text="${prod.productDescription}">
+					<td th:text="${prod.productCategory}">
+					<td th:text="${prod.productStock}">
+					<td th:text="${prod.productPrice}">
+					<td><img alt="image"
+						th:src="@{/uploads/}+${prod.productFileName}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<footer th:insert="~{fragments/footer :: footers}" />
+</body>
+</html>

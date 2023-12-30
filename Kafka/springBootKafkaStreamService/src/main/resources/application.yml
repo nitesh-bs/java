@@ -1,0 +1,28 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        order-input-channel:
+          destination: nitesh
+        order-homedelivery-output-channel:
+          destination: home-service
+        order-takeaway-output-channel:
+          destination: takeaway
+      kafka:
+        streams:
+          binder:
+            brokers: localhost:9092        
+
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+   #   key-serializer: org.apache.kafka.common.serialization.StringSerializer
+   #   value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: com.nitesh.springKafkaStreamService
+            add:
+              type:
+                headers: false       

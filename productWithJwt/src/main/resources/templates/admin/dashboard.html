@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<title th:include="fragments/header :: tiles(title='Admin Dashboard')" />
+<th:block th:include="fragments/headerlink" />
+</head>
+<body>
+	<div>
+
+		<th:block th:include="fragments/header" />
+
+		<div class="container-fluid">
+			<h5>Admin -> Dashboard</h5>
+			<hr>
+			<div>
+				<br>Role(s): <span sec:authentication="principal.authorities"></span>
+				<br> <br> Total Product :
+				<th:block th:text="${totalProduct}">
+			</div>
+			<div th:text="${#authentication.principal.authorities}"></div>
+			<hr>
+			<footer th:insert="~{fragments/footer :: footers}">></footer>
+		</div>
+
+
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+1672638173580	Extract local variable 'createJwtToken'
+1672640227508	Delete element
+1672742375039	Rename local variable 'registeredUserDetails'
+1672824971338	Extract local variable 'findByAmenitiesName'
+1672828755816	Extract local variable 'savedAmenities'
+1672892606500	Rename local variable 'savedAmenities'
+1672909019145	Extract local variable 'files'
+1672984272820	Extract local variable 'findByUserId'
+1673002569025	Extract local variable 'saveAll'
+1673002760403	Delete elements

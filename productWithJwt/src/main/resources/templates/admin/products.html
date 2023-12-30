@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<title th:include="fragments/header :: tiles(title='Product')"></title>
+<th:block th:include="fragments/headerlink" />
+</head>
+<body>
+	<th:block th:include="fragments/header" />
+	<div class="container-fluid">
+		<h2>Products</h2>
+		<hr>
+		<br>
+
+		<div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div>
+						<div th:if="${message ne null}">
+							<div class="alert alert-danger col-xs-offset-1 col-xs-6">
+								<p th:text="${message}">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<form th:action="@{/admin/addProducts}" th:object="${product}"
+				class="form" method="post" enctype="multipart/form-data">
+				<div>
+					<input type="hidden" th:field="*{id}">
+					<div class="row mb-3 form-group">
+						<div class="col-sm-6">
+							<input type="file" class="form-control" th:field="*{file}">
+						</div>
+						<div th:if="${#fields.hasErrors('file')}"
+							style="margin-bottom: 25px" class="text-danger">
+							<ul>
+								<li th:each="err : ${#fields.errors('file')}"
+									th:text="'File' + ${err}" />
+							</ul>
+						</div>
+					</div>
+
+					<div class="row mb-3 form-group">
+						<div class="col-sm-6">
+							<input type="text" th:field="*{productName}" class="form-control"
+								placeholder="Product Name">
+						</div>
+						<div th:if="${#fields.hasErrors('productName')}"
+							style="margin-bottom: 25px" class="text-danger">
+							<ul>
+								<li th:each="err : ${#fields.errors('productName')}"
+									th:text="'Product Name' + ${err}" />
+							</ul>
+						</div>
+					</div>
+					<div class="row mb-3 form-group">
+						<div class="col-sm-6">
+
+							<input type="text" th:field="*{productDescription}"
+								class="form-control" placeholder="Product Description">
+						</div>
+						<div th:if="${#fields.hasErrors('productDescription')}"
+							style="margin-bottom: 25px" class="text-danger">
+							<ul>
+								<li th:each="err : ${#fields.errors('productDescription')}"
+									th:text="'Product Description' + ${err}" />
+							</ul>
+						</div>
+					</div>
+					<div class="row mb-3 form-group">
+						<div class="col-sm-6">
+							<input type="text" th:field="*{productCategory}"
+								class="form-control" placeholder="Product Category">
+						</div>
+						<div th:if="${#fields.hasErrors('productCategory')}"
+							style="margin-bottom: 25px" class="text-danger">
+							<ul>
+								<li th:each="err : ${#fields.errors('productCategory')}"
+									th:text="'Product Category' + ${err}" />
+							</ul>
+						</div>
+					</div>
+					<div class="row mb-3 form-group">
+						<div class="col-sm-6">
+							<input type="number" th:field="*{productStock}"
+								class="form-control" placeholder="Product Stock">
+						</div>
+						<div th:if="${#fields.hasErrors('productStock')}"
+							style="margin-bottom: 25px" class="text-danger">
+							<ul>
+								<li th:each="err : ${#fields.errors('productStock')}"
+									th:text="'Product Stock' + ${err}" />
+							</ul>
+						</div>
+					</div>
+					<div class="row mb-3 form-group">
+						<div class="col-sm-6">
+							<input type="text" th:field="*{productPrice}"
+								class="form-control" placeholder="Product Price">
+						</div>
+						<div th:if="${#fields.hasErrors('productPrice')}"
+							style="margin-bottom: 25px" class="text-danger">
+							<ul>
+								<li th:each="err : ${#fields.errors('productPrice')}"
+									th:text="'Product Price' + ${err}" />
+							</ul>
+						</div>
+					</div>
+
+					<div class="row mb-3 form-group">
+						<div class="col-sm-6">
+							<select th:field="*{categoryId}" class="form-control">
+								<option value="0">Select Category</option>
+								<option th:each="i : ${category}" th:value="${i.categoryId}"
+									th:text="${i.categoryName}"
+									th:selected="${i.categoryId==categoryId}"></option>
+							</select>
+						</div>
+						<div th:if="${#fields.hasErrors('categoryId')}"
+							style="margin-bottom: 25px" class="text-danger">
+							<ul>
+								<li th:each="err : ${#fields.errors('categoryId')}"
+									th:text="'Category ' + ${err}" />
+							</ul>
+						</div>
+					</div>
+
+					<div class="row mb-3 form-group">
+						<div class="col-sm-6">
+							<input type="submit" value="Submit" class="btn btn-primary">
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+	<footer th:insert="~{fragments/footer :: footers}"></footer>
+</body>
+</html>

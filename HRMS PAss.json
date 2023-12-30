@@ -1,0 +1,87 @@
+{
+    "resetPassword":{
+        "resetPasswordToken":null,"resetPasswordExpires":null
+    },
+    "emergencyContactNumber":"8200127747",
+    "department":"60b722296d55e80c3c688c3e",
+    "designation":"60b722296d55e80c3c688c5d",
+    "vehicalNumber":"",
+    "marriageDate":"",
+    "degree":"MSC ICT",
+    "collegeName":"JP Dawer",
+    "YearOfPassing":"2022",
+    "ifscCode":"VARA0289007",
+    "accountHolderName":"Nitesh Kantibhai Shekhada",
+    "bankId":"60db0eb52456edc99e1b0615",
+    "accountNumber":"00710120195724",
+    "resignationDate":"",
+    "noticePeriod":"",
+    "lastDate":null,"photo":null,
+    "password":"$2a$10$cGWmHVWNxyW2VXudo.JMo.Z3Xkfpe8hVxgAMx2Boi43NNXb1bcL72",
+    "backupLeaveTotalMinutes":null,
+    "payrollID":"622f22f76f03c9709d2fe67f",
+    "documentID":"6231bae73a007a16aa658b9c",
+    "role":"60b722296d55e80c3c688c32",
+    "organizationType":"Bigscal",
+    "leftReason":null,
+    "leftLetter":null,
+    "resignDate":null,"leftDate":null,
+    "isDRSRequired":true,
+    "isDeleted":false,
+    "isLeft":false,
+    "houseRentAllowance":"0",
+    "_id":"622ecaec6f03c9709d2fe55e",
+    "firstName":"Nitesh",
+    "middleName":"Kantibhai",
+    "lastName":"Shekhada",
+    "email":"niteshshekhada33@gmail.com",
+    "birthDate":"2000-08-10T00:00:00.000Z",
+    "gender":"Male",
+    "contactNumber":"9429486357",
+    "position":"Employee",
+    "correspondenceAddress":"33, Iswar Park Society, Punagam, Sitanagar Chokdi, Choryasi, Surat, Gujarat, 395010",
+    "permanentAddress":"33, Iswar Park Society, Punagam, Sitanagar Chokdi, Choryasi, Surat, Gujarat, 395010",
+    "status":"Single",
+    "officeStartTime":"2022-10-08T04:00:00.000Z",
+    "officeEndTime":"2022-10-08T13:00:00.000Z",
+    "totalMinutes":"540",
+    "lateReasonMinute":"2022-10-08T04:15:00.000Z",
+    "attendanceType":"Card","overtime":true,
+    "overTimeMinute":"0","leaveCreditType":"Monthly",
+    "leaveTotalMinutes":"540",
+    "attendanceCode":"BS215",
+    "createdAt":"2022-03-14T04:56:12.254Z",
+    "updatedAt":"2022-10-08T07:16:31.237Z",
+    "__v":0,"aadhaarCardName":"Shekhada Niteshkumar Kantibhai","aadhaarNumber":"875546072213"}
+    '25', '$2a$10$WW0AHr3FN/ib4i6UDnuwo.D4FzLC7MJTrxsKFhUQG9YP2xc08szUW', 'A', 'ROLE_U', 'nayan'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "_id":"622ecaec6f03c9709d2fe55e",
+        "organizationType":"Bigscal",
+        "isDeleted":false,
+        "isLeft":false,
+        "firstName":"Nitesh",
+        "middleName":"Kantibhai",
+        "lastName":"Shekhada",
+        "email":"niteshshekhada33@gmail.com",
+        "birthDate":"2000-08-10T00:00:00.000Z",
+        "gender":"Male",
+        "contactNumber":"9429486357",
+        "position":"Employee",
+        "correspondenceAddress":"33, Iswar Park Society, Punagam, Sitanagar Chokdi, Choryasi, Surat, Gujarat, 395010",
+        "permanentAddress":"33, Iswar Park Society, Punagam, Sitanagar Chokdi, Choryasi, Surat, Gujarat, 395010",
+        "attendanceCode":"BS215",
+        
