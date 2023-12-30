@@ -1,0 +1,36 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- <bean id="myCoach" class="com.nitesh.springDemo.BaseballCoach"> <constructor-arg 
+		ref="myFortuneService" /> </bean> -->
+
+	<!-- load properties file -->
+	<context:property-placeholder
+		location="classpath:sport.properties" />
+
+	<bean id="myCoach" class="com.nitesh.springDemo.CricketCoach">
+		<property name="fortuneService" ref="myFortuneService"></property>
+		<property name="email" value="${cricket.email}"></property>
+		<property name="team" value="${cricket.team}"></property>
+	</bean>
+
+	<bean id="myFortuneService"
+		class="com.nitesh.springDemo.HappyFortuneService"></bean>
+
+
+	<bean id="myLoggerConfig"
+		class="com.nitesh.springDemo.MyLoggerConfig" init-method="initLogger">
+		<property name="rootLoggerLevel" value="FINE" />
+		<property name="printedLoggerLevel" value="FINE" />
+	</bean>
+
+	<bean id="myFortune"
+		class="com.nitesh.springDemo.RandomFortuneService">
+	</bean>
+	<bean id="myGolfCoach" scope="prototype" class="com.nitesh.springDemo.GolfCoach">
+
+		<constructor-arg ref="myFortune" />
+	</bean>
+</beans>
